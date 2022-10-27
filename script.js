@@ -49,7 +49,6 @@ function adicionar() {
         thead.appendChild(tr2).appendChild(td2).appendChild(td2texto)
         thead.appendChild(tr2).appendChild(td3).appendChild(btn).appendChild(btntexto)
 
-        alert(cadastro[0])
 
         cadastro.push(nome.value.toUpperCase())
 
