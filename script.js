@@ -1,5 +1,5 @@
 let button = document.getElementById('button')
-let nomes = []
+let cadastro = []
 
 let tableDados = document.getElementById('dadosTabela')
 let thead = document.createElement('thead')
@@ -49,7 +49,12 @@ function adicionar() {
         thead.appendChild(tr2).appendChild(td2).appendChild(td2texto)
         thead.appendChild(tr2).appendChild(td3).appendChild(btn).appendChild(btntexto)
 
-        nomes.push(nome)
+        alert(cadastro[0])
+
+        cadastro.push(nome.value.toUpperCase())
+
+        
+
         
     }
     
