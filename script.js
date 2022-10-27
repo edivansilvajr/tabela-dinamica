@@ -1,18 +1,19 @@
 let button = document.getElementById('button')
+let nomes = []
 
 let tableDados = document.getElementById('dadosTabela')
 let thead = document.createElement('thead')
-let tr = document.createElement('tr')
-let th1 = document.createElement('td')
-let th2 = document.createElement('td')
-let th3 = document.createElement('td')
+let tr1 = document.createElement('tr')
+let th1 = document.createElement('th')
+let th2 = document.createElement('th')
+let th3 = document.createElement('th')
 let th1texto = document.createTextNode('Nome')
 let th2texto = document.createTextNode('Idade')
 let th3texto = document.createTextNode('Ação')
 
-tableDados.appendChild(thead).appendChild(tr).appendChild(th1).appendChild(th1texto)
-tableDados.appendChild(thead).appendChild(tr).appendChild(th2).appendChild(th2texto)
-tableDados.appendChild(thead).appendChild(tr).appendChild(th3).appendChild(th3texto)
+tableDados.appendChild(thead).appendChild(tr1).appendChild(th1).appendChild(th1texto)
+tableDados.appendChild(thead).appendChild(tr1).appendChild(th2).appendChild(th2texto)
+tableDados.appendChild(thead).appendChild(tr1).appendChild(th3).appendChild(th3texto)
 
 
 
@@ -33,11 +34,24 @@ function adicionar() {
         alert('Sua idade não se adequa aos pré requisitos')
     
     } else {
-        alert('tudo ok')
-    }
+        let tr2 = document.createElement('tr')
+        let td1 = document.createElement('td')
+        let td2 = document.createElement('td')
+        let td3 = document.createElement('td')
+        let btn = document.createElement('button')
+        
 
-    
-    
+        let td1texto = document.createTextNode(nome.value)
+        let td2texto = document.createTextNode(idade)
+        let btntexto = document.createTextNode('Excluir')
+
+        thead.appendChild(tr2).appendChild(td1).appendChild(td1texto)
+        thead.appendChild(tr2).appendChild(td2).appendChild(td2texto)
+        thead.appendChild(tr2).appendChild(td3).appendChild(btn).appendChild(btntexto)
+
+        nomes.push(nome)
+        
+    }
     
 }
 
