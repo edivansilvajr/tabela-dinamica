@@ -9,19 +9,44 @@ body {
     font: normal 1.1em arial;
 }
 
-section {
-    padding: 15px;
-}
 
 div {
     margin-top: 20px;
 }
 
+input {
+    font-size: 1.1em;
+    padding-left: 5px;
+}
+
 table {
     border-collapse: collapse;
+    min-width: 300px;
+    margin: auto;
+}
+
+thead {
+    background-color: gray;
+    color: white;
 }
 
 td,th {
     border: 1px solid black;
     padding: 5px;
 }
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+section {
+    padding: 15px;
+}
+
+section#dados {
+    text-align: center;
+    background-color: lightgray;
+}
+
+
+
