@@ -66,11 +66,14 @@ function adicionar() {
             let td2texto = document.createTextNode(idade)
             let btntexto = document.createTextNode('Excluir')
 
-            thead.appendChild(tr2).appendChild(td1).appendChild(td1texto)
-            thead.appendChild(tr2).appendChild(td2).appendChild(td2texto)
-            thead.appendChild(tr2).appendChild(td3).appendChild(btn).appendChild(btntexto)
+            tableDados.appendChild(tbody).appendChild(tr2).appendChild(td1).appendChild(td1texto)
+            tableDados.appendChild(tbody).appendChild(tr2).appendChild(td2).appendChild(td2texto)
+            tableDados.appendChild(tbody).appendChild(tr2).appendChild(td3).appendChild(btn).appendChild(btntexto)
 
             function excluir() {
+                if(valores.length == 1) {
+                    tbody.remove()
+                }
                 tr2.remove()
                 valores.pop()
             }
