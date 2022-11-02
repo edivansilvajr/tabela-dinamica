@@ -29,8 +29,7 @@ function adicionar() {
         alert('Por favor preencha os campos necessários')
     } else if(isNaN(txtidade.value)) {
         alert('[ERRO campo: Idade] Valor inválido, favor inserir números')
-        txtidade.value = ''
-        txtidade.focus()
+        
     } else if(!isNaN(nome.value)) {
         alert('[ERRO campo: Nome] Valor inválido, favor inserir seu nome corretamente')
     } else if (idade < 18 || idade > 100) {
@@ -41,9 +40,7 @@ function adicionar() {
 
         if(valores.indexOf(nome.value.toUpperCase()) != -1) {
             alert('Esse nome ja foi cadastrado anteriormente')
-            nome.value = ''
-            txtidade.value = ''
-            nome.focus()
+
         } else {
             valores.push(nome.value.toUpperCase())
             let busca = valores[0]
@@ -80,9 +77,6 @@ function adicionar() {
 
             btn.addEventListener('click', excluir)
             
-            nome.value = ''
-            txtidade.value = ''
-            nome.focus()
         } 
     }
     
